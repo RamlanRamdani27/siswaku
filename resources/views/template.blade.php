@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Siswaku</title>
+    {{-- Memanggail Boostrap  --}}
+    <link rel="stylesheet" href="{{ asset('bootstrap-3.3.6/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        @include('navbar')
+        @yield('main')
+    </div>
+    @yield('footer')
+<script src="{{ asset('js/jquery-2.2.1.min.js') }}"></script>
+<script src="{{ asset('bootstrap-3.3.6/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/siswakuapp.js') }}"></script>
+</body>
+</html>
